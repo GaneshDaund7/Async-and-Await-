@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Aync_and_Await_in_csharp</RootNamespace>
+    <StartupObject>Aync_and_Await_in_csharp.FindingNoofCharctersin_File</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="abc.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="abc.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
